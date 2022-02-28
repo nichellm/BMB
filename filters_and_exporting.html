@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../timeline_style.css">
+    <link rel="#" href="#">
+    </head>
+<style>
+
+    html{background-color:rgb(12,54,124)}
+    #wrapper {
+        margin:0 auto;
+        width:80%;
+        background-color:rgb(58,99,149);
+        overflow:hidden;
+    }
+    header{
+        margin:0 auto;
+        width:1200px;
+    }
+    #nav1 {
+  width:1200px;
+  margin:0 auto;
+  list-style:none;
+  background-color: #333;
+  padding: 0;
+  overflow: hidden;
+  }
+  #nav1 li {
+  float:left;
+  }
+  #nav1 a {
+  display:inline-block;
+  text-align:center;
+  color:white;
+  width:150px; 
+  text-decoration:none; 
+  padding: 14px 16px;
+         
+}
+#nav1 a:hover{
+background-color: #111;
+}
+h2, h1{
+    text-align: center;
+    
+}
+
+    #summary{
+        width:1150px;
+        margin: 0 auto;
+        background-color:white;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    #columnarea{
+        margin:0 auto;
+        width:1200px;
+        min-height: 500px;
+    }
+
+table, th, td {
+    border:1px solid black !important;
+    margin: 0 auto;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    margin-top: 20px;
+    clear:both;
+min-height:100%;
+color:rgb(134, 118, 124);
+}
+
+
+
+</style>
+<body>
+    <div id="wrapper">
+<header>
+
+<img src="../images/USDA-banner1.png">
+
+</header>
+<ul id="nav1">
+    <li><a href="../bmb_index.html">Home</a></li>
+    <li><a href="../Team_members.html">Team Members</a></li>
+    <li><a href="links.html">Links</a></li>
+    <li><a href="../Team_members.html">Templates</a></li>
+ 
+  </ul> 
+
+<div id="summary">
+
+    <h1>Using Filters and Exporting Data from ServiceNow</h1>
+ 
+<p> Data for reports are now automatically emailed due to requesting this from IT, but there may still be instances where you 
+    may need to manually export the data by using the filters on ServiceNow. Prior to practicing the following be sure that your 
+    dashboard settings have been configured to have all of the column info described in slide 3 of the “Assigning Tickets to Specialists” 
+    located on the Customer Service Training <a href="../customer_service/customer_service_index.html"> Page here</a> 
+</p>   
+<p>
+    Generally, the report contains data on the following:
+</p>
+<table>
+    <Caption></Caption>
+    <tr> 
+       <th><strong>Active Tickets</strong></th>
+       <th><strong>Closed Tickets</strong></th>
+       <th><strong>Notified Customer</strong></th>
+       
+    </tr>
+    <tr>
+       <td>
+<p>
+    Tasks that are still processing and can by found by using the Filter “Active is True”. 
+    These are used for the Green, Amber, Red report (GAR) where they are color coded based on their 
+    days open compared to the benchmarks the particular request type has for being green, amber, or red. 
+    The GAR is reported by both the request type and by specialist for each branch
+</p>
+       </td>
+       <td>
+<p>
+    Tasks that are completed and can by found by using the Filter “Active Is False".
+    These are used for processing times, which is the difference between the day a ticket was opened to the day it was closed.
+     Averages for the same request types that were closed within a week are then used to give the overall processing time for that
+      branch within the week.
+</p>
+       </td>
+       <td>
+        <p>
+            This implies that the specialist checked the box to signify that they have alerted the customer 
+            that they received the task. Can be found by using the filter Notified Customer is False, and this
+             would be more relevant for tasks open more than 2 business days, as 2 business days is the requirement that specialists must 
+             notify them in. This is used for calculating Response Times, which the difference between the day the ticket was 
+             opened and the day the specialist checked the box. Note, if the box has not been checked the ticket status is closed, 
+             the closed date is used versus the notified customer date.
+        </p>
+       </td>
+    
+    </tr>
+ </table>
+ <p>Below is an image of where the filters are located to access being able to export that information. </p>
+ <p>To access your ServiceNOW (if your account was created) save this link to your prefered browsers favorites to follow along <a href="www.usdafpacbc.servicenowservices.com/nav_to.do" > (Click Here) </a></p>
+<img src="../images/filters.png">
+
+<p>
+    If you were to manually export the data needed for reports you would use the filters by clicking the funnel symbol and 
+    selecting conditions to download all tickets for this fiscal year (21) and all tickets for the last fiscal years (2020 and 2019) 
+    since there are still some tickets being processed remaining. You would use the filter one at a time for each fiscal year. 
+    The report is exported every Wednesday 12:00 am. Use the following conditions to manually export the data are as follows:
+
+</p>
+
+<strong>Fiscal Year 2021</strong>
+<ul>
+
+    <li>
+        Active is TRUE, <strong>OR</strong>
+    </li>
+    <li>Active is FALSE, <strong>AND</strong></li>
+    <li>Opened between October 1, 2020 to TODAY, <strong>OR</strong></li>
+    <li>Closed between October 1, 2020 to TODAY.    </li>
+    <li>Click <strong>RUN</strong></li>
+    <li>Use the three lined bars located by <strong>Number</strong> to export to Excel sheet</li>
+</ul>
+</p>
+<p> If all of the condition have been entered into the filters correctly the image of your filter would look similar to the image below.</p>
+
+<img src="../images/filters 2.JPG">
+
+<p>Repeat using the filters with these conditions to get results for the other fiscal years and save these excel exports on your desktop in a folder titled "Practice_DataExports".</p>
+<strong>Fiscal Year 2020</strong>
+<ul>
+
+    <li>
+        Active is TRUE, <strong>OR</strong>
+    </li>
+    <li>Active is FALSE, <strong>AND</strong></li>
+    <li>Opened between October 1, 2019 to September 30, 2020, <strong>OR</strong></li>
+    <li>Closed between October 1, 2019 to September 30, 2020.    </li>
+    <li>Click <strong>RUN</strong></li>
+    <li>Use the three lined bars located by <strong>Number</strong> to export to Excel sheet</li>
+</ul>
+
+<strong>Fiscal Year 2019</strong>
+<ul>
+
+    <li>
+        Active is TRUE, <strong>OR</strong>
+    </li>
+    <li>Active is FALSE, <strong>AND</strong></li>
+    <li>Opened between October 1, 2018 to September 30, 2019, <strong>OR</strong></li>
+    <li>Closed between October 1, 2018 to September 30, 2019.    </li>
+    <li>Click <strong>RUN</strong></li>
+    <li>Use the three lined bars located by <strong>Number</strong> to export to Excel sheet</li>
+</ul>
+<p>
+    If there are filters you need to use recurringly, save time by creating a favorite. After inputting the conditions for your 
+    filters and selecting run, select the three lined bars by Request Status on the top to choose Create Favorites. Name your favorite, 
+    and the preselected filter will now be located on the left side under your favorites bookmarked under a star. 
+    Now proceed to the Excel lesson in how to manipulate the data once it has exported from ServiceNow as an Excel sheet. You will use the data you
+    exported from this lesson.</p>
+    
+</div>
+
+
+<div class="footer">
+  <footer>
+      This website was made by Nichelle McMiller |<a href="mailto:nichellm@terpmail.umd.edu" title="email me!">[E-Mail]</a> | <a href="#top">[Back to Top Page]</a> | <a href="../../portfolio_index.html"> Home Page</a>
+  </footer>
+</div>
+</body>
+  </html>

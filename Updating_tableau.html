@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="timeline_style.css">
+    <link rel="#" href="#">
+    </head>
+<style>
+
+    html{background-color:rgb(12,54,124)}
+    #wrapper {
+        margin:0 auto;
+        width:80%;
+        background-color:rgb(58,99,149);
+        overflow:hidden;
+    }
+    header{
+        margin:0 auto;
+        width:1200px;
+    }
+    #nav1 {
+  width:1200px;
+  margin:0 auto;
+  list-style:none;
+  background-color: #333;
+  padding: 0;
+  overflow: hidden;
+  }
+  #nav1 li {
+  float:left;
+  }
+  #nav1 a {
+  display:inline-block;
+  text-align:center;
+  color:white;
+  width:150px; 
+  text-decoration:none; 
+  padding: 14px 16px;
+         
+}
+#nav1 a:hover{
+background-color: #111;
+}
+h2, h1{
+    text-align: center;
+}
+
+    #summary{
+        width:1150px;
+        margin: 0 auto;
+        background-color:white;
+        padding-left:20px;
+        padding-right:20px;
+        padding-top:20px;
+        padding-bottom:20px;
+    }
+    #columnarea{
+        margin:0 auto;
+        width:1200px;
+        min-height: 500px;
+    }
+#column-left {
+    width:350px;
+    background-color: red;
+    float:left;
+    margin-right:35px;
+    padding-left:10px;
+}
+
+#column-center {
+    width:350px;
+    background-color:yellow;
+    padding-right:20px;
+    float:left;
+    Margin-right:35px;
+    padding-left:10px;
+    padding-bottom:35px;
+}
+
+div#column-right {
+width:350px;
+background-color:blue;
+padding-right:20px;
+float:left;
+padding-left:10px;
+
+}
+table, th, td {
+    border:1px solid black !important;
+    margin: 0 auto;
+}
+#autoreply {padding: 10px;
+     border: 2px solid blue;
+}
+p{
+    font-size: larger;
+}
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #333;
+    margin-top: 20px;
+    clear:both;
+min-height:100%;
+color:rgb(134, 118, 124);
+}
+
+
+
+</style>
+<body>
+    <div id="wrapper">
+<header>
+
+<img src="../images/USDA-banner1.png">
+
+</header>
+<ul id="nav1">
+    <li><a href="../bmb_index.html">Home</a></li>
+    <li><a href="Team_members.html">Team Members</a></li>
+    <li><a href="links.html">Links</a></li>
+    <li><a href="../templates.html">Templates</a></li>
+ 
+  </ul> 
+
+<div id="summary">
+ 
+    <p>
+
+        Updating the report requires combining new and old data, and sometimes scrubbing out data that is no longer needed such as is done with the Daily Update list. 
+        As a result, you will have to switch back and forth between the old report you are updating with new information, and the new information that you are only collecting from. </p>
+        <p>To make it less confusing when you are using one versus another excel file we’ll refer to them in the instructions as DATA FOR UPDATE, the excel file that has OLD information 
+            and is being combined with NEW information, and SNOW DATA EXPORT, the excel file that has the up to date information that we are copy and pasting.</p>
+             <p>For ongoing reporting it is only necessary to continually save to your folder the DATA FOR UPDATE excel file (with the new date that you label) as 
+                 that is used to link to Tableau. </p>
+        
+         
+        
+        <ol>
+        
+        <li>Open last saved excel data (DATA FOR UPDATE): FileàSave a Copy-> Save it under a new date inside of your Weekly Customer Report Data Folder. </li>
+        
+        <li>On The “All Tab” : Data-> clear filters. Navigate to the bottom where the last amount of data was pasted. Here you will paste the information you were emailed/or manually exported for this week. </li>
+        
+        <li>Open excel file with latest data (SNOW DATA EXPORT) and start by formatting: Say yes to “Enable Editing”, use the corner carrot to highlight all, wrap text (hit twice) </li>
+        
+        <li>Highlight Column B (STATUS) and sort from A-Z or Z-A</li>
+        
+        <li>On the very first header row, highlight and put the options for filtering: Data Tab, select FilterS </li>
+        
+        <li>On the Status Column after you have sorted, filter for work in progress. Then copy and paste all of those into the new excel file (DATA FOR UPDATE) you saved with the current date. (Tip: Using control+shift arrow will highlight all text.)</li>
+        
+        <li>Paste the new data at the bottom, and label in the column next to it the date the report was pulled. (Tip: Double clicking on the bottom right corner will automatically make it fill boxes using the pattern.)</li>
+        
+        <li>Back on the exported excel (SNOW DATA EXPORT) on R or the column that says “Closed:” highlight the column to sort from Z-A.</li>
+        
+        <li>On the same column now filter for all dates in the closed that include the last Wednesday to the Tuesday before the day of the new report (example: 7/21 to 7/27) then copy this over into the (DATA FOR UPDATE) file and lable it also with todays report date in the column labeled “Date Pulled”</li>
+        
+        <li>Now use the FY20 SNOW DATA EXPORT and do the same for the work and progress and the closed for only the past week. There should be none in FY19 to have to do (all tasks are closed and therefor have no changes to add). </li>
+        
+        <li>Now on the DATA FOR UPDATE file, copy and Paste all of the new information on the ALL tab on to a new tab. Delete the old one and name the new one ALL. Now the filters will work, after copy and pasting information filtering because less accurate. </li>
+        <li>Label the date columns based on the filters you will use (row B through E) </li>
+        
+         
+        
+        <li>Sort on the column for Date pulled, showing only the date for the current report, now label the following after performing the sort/filter</li>
+        
+        </ol>
+        
+        <ul>
+        
+        <li><strong>Weekly open label: </strong>sort on opened column from Z-A, select the dates from last Wednesday to the Tuesday before your report. In the weekly open column label those a through date, from the last Wednesday to the current Wednesday (ex: 7/21-7/28) </li>
+        
+        <li><strong>Weekly work in progress label: </strong>sort on status column from Z-A, select “Work in progress”. In the work in progress column label those a through date, from the last Wednesday to the current Wednesday (ex: 7/21-7/28)</li>
+        
+        <li><strong>Weekly average processing label: </strong>sort on status column from Z-A, select “closed”. In the weekly average processing column label those a through date, from the last Wednesday to the current Wednesday (ex: 7/21-7/28)</li>
+        
+        <li><strong>Customer not notified label : </strong>sort on Notified Customer? Tre/False Column, select false
+        
+        Sort on time open, unselect anything blank and up to 2 days. Leave anything 3 days or more selected.
+        
+        Label but BEWARE OF GAPS, sorting on this column will not always be precise. </li>
+        
+        </ul>
+        
+        
+
+</div>
+<div class="footer">
+  <footer>
+      This website was made by Nichelle McMiller |<a href="mailto:nichellm@terpmail.umd.edu" title="email me!">[E-Mail]</a> | <a href="#top">[Back to Top Page]</a> | <a href="../../portfolio_index.html"> Home Page</a>
+  </footer>
+</div>
+</body>
+  </html>
